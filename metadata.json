@@ -1,0 +1,7 @@
+{
+  "name": "Canada Immigration Candidate Profile Generator",
+  "description": "Structured candidate intake profile generator by BACS × EapGold Travels that exports client-side structured JSON for consultant review.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
