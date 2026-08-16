@@ -4,7 +4,7 @@ import { copyToClipboard } from '../lib/clipboard';
 import { downloadJsonFile } from '../lib/download';
 import { formatFriendlyDate } from '../lib/dates';
 import { BrandLockup } from './BrandLockup';
-import { CONSULTANT_WHATSAPP_RAW, CONSULTANT_WHATSAPP_NUMBER } from '../constants';
+import { CONSULTANT_WHATSAPP_RAW } from '../constants';
 import {
   Check,
   Copy,
@@ -18,7 +18,6 @@ import {
   ChevronUp,
   MessageCircle,
   ExternalLink,
-  Phone,
 } from 'lucide-react';
 import { ConfirmModal } from './ConfirmModal';
 
@@ -173,7 +172,7 @@ Generated via BACS × EapGold Travels Profile Generator (Profile ID: ${profile.p
               className="flex-1 inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] active:bg-[#1da850] text-white text-sm font-bold shadow-sm transition-all duration-150 ring-2 ring-[#25D366]/20 group cursor-pointer"
             >
               <MessageCircle className="w-5 h-5 text-white fill-white shrink-0 group-hover:scale-110 transition-transform" />
-              <span>Share to Consultant via WhatsApp ({CONSULTANT_WHATSAPP_NUMBER})</span>
+              <span>Send Profile to Consultant via WhatsApp</span>
               <ExternalLink className="w-4 h-4 text-white/80 shrink-0" />
             </a>
 
@@ -185,12 +184,12 @@ Generated via BACS × EapGold Travels Profile Generator (Profile ID: ${profile.p
               {copiedWhatsAppMsg ? (
                 <>
                   <Check className="w-4 h-4 text-emerald-600" />
-                  <span className="text-emerald-600 font-bold">WhatsApp Text Copied!</span>
+                  <span className="text-emerald-600 font-bold">Message Copied!</span>
                 </>
               ) : (
                 <>
                   <Copy className="w-4 h-4 text-slate-500" />
-                  <span>Copy WhatsApp Text</span>
+                  <span>Copy WhatsApp Message</span>
                 </>
               )}
             </button>
@@ -252,11 +251,6 @@ Generated via BACS × EapGold Travels Profile Generator (Profile ID: ${profile.p
           <div className="flex items-center gap-2 text-slate-300 text-xs font-bold uppercase tracking-wider">
             <Info className="w-4 h-4 text-[#C59B27]" />
             <span>Consultant WhatsApp Outreach</span>
-          </div>
-
-          <div className="flex items-center gap-1.5 text-xs text-slate-300 bg-slate-800/80 px-3 py-1 rounded-lg border border-slate-700">
-            <Phone className="w-3.5 h-3.5 text-[#25D366]" />
-            <span>Consultant WhatsApp: <strong>{CONSULTANT_WHATSAPP_NUMBER}</strong></span>
           </div>
         </div>
 

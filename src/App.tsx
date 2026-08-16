@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Analytics } from '@vercel/analytics/react';
 import { CandidateDraftState, CandidateProfileExport, StepKey } from './types';
 import { INITIAL_DRAFT_STATE, STEPS } from './constants';
 import {
@@ -402,7 +401,6 @@ export default function App() {
         }}
         onCancel={() => setShowClearDraftModal(false)}
       />
-      <Analytics />
     </div>
   );
 }
